@@ -16,7 +16,7 @@ public class product implements displayDet {
         price -= price * (percentage / 100);
     }
 
-    public void discount(double Amount, boolean isFlat) {
+    public void discount(double Amount, boolean isDirect) {
         if (isFlat) {
             price = price - Amount;
 
@@ -27,7 +27,9 @@ public class product implements displayDet {
 
     @Override
     public void displayDetails() {
-        System.out.println("Name: " + name + "Price: " + price + "ID: " + id);
+        System.out.println("Product Name: " + name);
+        System.out.println("Product price: " + price);
+        System.out.println("Product ID: " + id);
     }
 
 }
