@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the number of products you want to add");
+        System.out.println("Enter the number of products you want to add: ");
         int productCount = scanner.nextInt();
         scanner.nextLine();
 
@@ -55,7 +55,7 @@ public class Main {
                 products[i].discount(percentage);
 
             } else if (discountType == 2) {
-                System.out.println("Enter flat discount amount");
+                System.out.println("Enter direct discount amount");
                 double Amount = scanner.nextDouble();
                 products[i].discount(Amount, true);
 
